@@ -44,6 +44,9 @@ open class BarLineScatterCandleBubbleRenderer: DataRenderer
         return set.isVisible && (set.isDrawValuesEnabled || set.isDrawIconsEnabled)
     }
 
+    open var xBounds: XBounds {
+        return _xBounds
+    }
     /// Class representing the bounds of the current viewport in terms of indices in the values array of a DataSet.
     open class XBounds
     {
